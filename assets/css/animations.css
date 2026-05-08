@@ -1,0 +1,78 @@
+/* =========================
+      animations.css
+========================= */
+
+/* Hero Fade */
+
+.hero-content {
+
+    animation: fadeIn 1.5s ease;
+}
+
+@keyframes fadeIn {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(30px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
+/* Typing Effect */
+
+.typing-text {
+
+    border-right: 3px solid white;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    animation:
+        typing 4s steps(22),
+        blink 0.8s infinite;
+}
+
+@keyframes typing {
+
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Scroll Animation */
+
+.hidden {
+
+    opacity: 0;
+
+    transform: translateY(50px);
+
+    transition: all 1s ease;
+}
+
+.show {
+
+    opacity: 1;
+
+    transform: translateY(0);
+}
